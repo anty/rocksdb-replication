@@ -8,6 +8,7 @@ A library for replication between master and slave
  - 支持一主N从
  - 支持数据拆分
  - 支持角色迁移
+
 # 日志
 类似于Mysql的Statement-based binary logging方案, 数据更新流水日志首先持久化到本地磁盘,然后顺序将日志同步给Slave,在Slave上重新replay来达到Slave与Master数据同步目的. 对本地流水日志的实现有一些特定要求
 
